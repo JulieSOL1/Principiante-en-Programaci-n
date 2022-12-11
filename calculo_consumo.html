@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+  
+  var consumoLtrs = 40
+  var kilometrosagaso = 480 
+  var kilometrosalco  = 300 
+  
+  document.write("la cantidad de kilometros por litro de gasolina es");
+  document.write("<br>");
+  document.write((kilometrosagaso/consumoLtrs));
+  document.write("<br>");
+  document.write("<br>");
+  document.write("la cantidad de kilometros por litro de gasolina es");
+  document.write("<br>");
+  document.write((kilometrosalco/consumoLtrs));
+  document.write("<br>");
+  document.write("<br>");
+
+  if ((kilometrosagaso/consumoLtrs)> (kilometrosalco/consumoLtrs) ) {document.write("el carro es mas eficiente en gasolina")} else {document.write("el carro es mas eficiente en alcohol")}
+
+  document.write("<br>");
+  document.write("<br>");
+
+  document.write("la solución del instructor fue:");
+
+  var tanque = 40;
+
+  var caminoConGasolina = 480;
+  var consumoDeGasolina = caminoConGasolina/tanque;
+
+  var caminoConAlcohol = 300;
+  var consumoDeAlcohol = caminoConAlcohol/tanque;
+
+  document.write("La eficiencia del carro usando gasolina es " + consumoDeGasolina + " km/L"); 
+  document.write("<br>"); 
+  document.write("La eficiencia del carro usando alcohol es " + consumoDeAlcohol + " km/L");
+
+  </script>

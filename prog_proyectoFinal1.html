@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h1>POGRAMA CALCULAR IMC</h1>
+
+<script>
+  
+  function saltarlinea() {
+    
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+
+  } 
+
+  function imprimir(frase) {
+    
+    document.write(frase);
+    saltarlinea();
+
+  } 
+  
+
+  function calcularImc(peso,altura) {
+    
+    imc = peso / (altura * altura);
+
+    return(imc)
+    
+  } 
+  
+   nombre = prompt("informe su nombre")
+   edad = prompt("informe su edad")
+   oficio = prompt("informe su oficio")
+   pesoInformado = prompt(nombre + ",informe su peso:")
+   alturaInformado = prompt(nombre + ",informe su altura:")
+
+   imcCalculado = calcularImc(pesoInformado,alturaInformado)
+   
+   imprimir(nombre +", su imc calculado es:" + imcCalculado);
+   if ((imcCalculado)> (50) ) {document.write("Le recomentamos consular a su medico de confianza")} else {document.write( nombre +", Estas muy bien, sigue asi")}
+
+     </script>
