@@ -1,0 +1,30 @@
+<canvas width="600" height="400"> </canvas>
+	
+<script>
+  var pantalla = document.querySelector("canvas");
+  var pincel = pantalla.getContext("2d"); 
+
+  pincel.fillStyle = "lightgrey";  //propiedad o caracteristica
+  pincel.fillRect(0,0,600,400); // funcion
+
+  pincel.fillStyle = "green";  //propiedad o caracteristica
+  pincel.fillRect(0,0,350,300); // funcion
+
+  pincel.fillStyle = "black";  //propiedad o caracteristica
+  pincel.fillRect(50,50,90,90); // funcion
+
+  pincel.fillStyle = "black";  //propiedad o caracteristica
+  pincel.fillRect(210,50,90,90); // funcion
+
+  pincel.fillStyle = "black";  //propiedad o caracteristica
+  pincel.fillRect(140,140,70,100); // funcion
+  
+  pincel.fillStyle = "black";  //propiedad o caracteristica
+  pincel.fillRect(100,190,40,110); // funcion
+
+  pincel.fillStyle = "black";  //propiedad o caracteristica
+  pincel.fillRect(210,190,40,110); // funcion
+
+  pincel.fill();
+
+	</script>
